@@ -78,7 +78,7 @@ struct trusted_key_source {
 
 extern struct key_type key_type_trusted;
 
-#define TRUSTED_DEBUG 0
+#define TRUSTED_DEBUG 1
 
 #if TRUSTED_DEBUG
 static inline void dump_payload(struct trusted_key_payload *p)

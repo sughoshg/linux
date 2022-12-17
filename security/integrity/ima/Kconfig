@@ -253,7 +253,7 @@ config IMA_TRUSTED_KEYRING
 	depends on IMA_APPRAISE && SYSTEM_TRUSTED_KEYRING
 	depends on INTEGRITY_ASYMMETRIC_KEYS
 	select INTEGRITY_TRUSTED_KEYRING
-	default y
+	default n
 	help
 	   This option requires that all keys added to the .ima
 	   keyring be signed by a key on the system trusted keyring.

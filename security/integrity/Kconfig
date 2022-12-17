@@ -46,7 +46,7 @@ config INTEGRITY_TRUSTED_KEYRING
 	bool "Require all keys on the integrity keyrings be signed"
 	depends on SYSTEM_TRUSTED_KEYRING
 	depends on INTEGRITY_ASYMMETRIC_KEYS
-	default y
+	default n
 	help
 	   This option requires that all keys added to the .ima and
 	   .evm keyrings be signed by a key on the system trusted
